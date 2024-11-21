@@ -22,7 +22,16 @@ git clone https://github.com/logan-jihoon/study-webserver.git
 cd study-webserver
 
 # Set Python version
-pyenv local 3.10.15
+pyenvy versions # List all installed versions
+pyenv local 3.10 # set the python version to 3.10
+
+
+# Set Dev Branch
+git checkout -b dev # Switch to dev 
+git push -u origin dev # Set up tracking relationship 
+
+# Configure poetry to create virtualenv in project directory
+poetry config virtualenvs.in-project true --local
 
 # Install dependencies
 poetry install
