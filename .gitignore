@@ -22,6 +22,11 @@ env/
 venv/
 ENV/
 
+# Poetry
+poetry.toml      # Local poetry configuration
+.venv/           # Virtual environment
+poetry.lock      # Don't ignore this - should be in version control
+
 # IDE settings
 .vscode/
 .idea/
